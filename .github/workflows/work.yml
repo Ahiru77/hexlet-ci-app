@@ -8,8 +8,6 @@ jobs:
         uses: actions/checkout@main
       - name: nsetup
         run: make setup
-      - name: nstart
-        run: make start
       - name: ntest
         run: make test
       - name: nlint

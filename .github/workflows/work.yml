@@ -6,9 +6,11 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@main
-      - name: setup
-        run: make setup 
+      - name: nsetup
+        run: make setup
+      - name: nstart
         run: make start
-      - name: testing
+      - name: ntest
         run: make test
+      - name: nlint
         run: make lint
